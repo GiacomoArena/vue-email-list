@@ -9,13 +9,18 @@
   <!-- axios -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
 
+  <link rel="stylesheet" href="css/style.css">
   <title>Vue Email List</title>
 </head>
 <body>
+  
   <div id="app">
+    <div class="genera">
+      <h2>Clicca il pulsante per generare 10 mail randomiche</h2>
     <button @click="getApi()">
-      log
+      Genera
     </button>
+    </div>
     <ul>
       <li  v-for="(mail, i) in emails">{{mail}}</li>
     </ul>
