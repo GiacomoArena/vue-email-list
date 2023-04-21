@@ -12,6 +12,7 @@ createApp({
   methods:{
 
     getApi(){
+      this.emails = []
       for (let i = 0; i < 10; i++) {
       axios.get(this.apiUrl).then(result => {
         this.emails.push(`'${ result.data.response}',`);
